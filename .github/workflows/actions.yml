@@ -8,8 +8,8 @@ jobs:
     steps:
       - name: Simple JS Actions
         id: trabajojs
-        uses: actions/hello-world-javascript-action@v1
+        uses: actions/hello-world-javascript-action@master
         with:
           who-to-greet: "Eduardo Rojo"
       - name: Log del primer steps
-        run: echo "{{ steps.trabajojs.outputs.time }}"
+        run: echo "${{ steps.trabajojs.outputs.time }}"
