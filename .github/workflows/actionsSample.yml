@@ -17,3 +17,12 @@ jobs:
           import platform
           print("Prueba de plataforma :" + platform.processor())
         shell: python
+  run-windows-commands:
+    runs-on: windows-latest
+    steps:
+      - name: Usamos PoweShell
+        run: Get-Location
+      - name: Usamos Bash
+        run: pwd
+        shell: bash
+     
