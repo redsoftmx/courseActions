@@ -15,5 +15,5 @@ jobs:
       - name: Usamos Python
         run: |
           import platform
-          print("Se corre en :" + platform.processor())
+          print("Prueba de plataforma :" + platform.processor())
         shell: python
