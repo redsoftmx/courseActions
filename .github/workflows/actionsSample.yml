@@ -15,5 +15,5 @@ jobs:
       - name: Usamos Python
         run: |
           import plataform
-          print(plataform.processor())
+          print("Se corre en :" + plataform.processor())
         shell: python
